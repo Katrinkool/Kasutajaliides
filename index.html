@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" v-model="message" @keypress.enter="addItem"><button @click="addItem">Add</button>
+        <ul>
+            <li v-for="(item,index) in items" :key="index">{{item}}</li>
+        </ul>
+    </div>
+</body>
+</html>
